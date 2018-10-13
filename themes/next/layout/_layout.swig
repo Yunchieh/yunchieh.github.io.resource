@@ -12,6 +12,12 @@
   {% include '_third-party/analytics/index.swig' %}
 </head>
 
+{% if theme.fireworks %}
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+{% endif %}
+
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
 
   {% set container_class = "container " %}
@@ -22,6 +28,8 @@
   <div class="{{ container_class }} {% block page_class %}{% endblock %}">
     <div class="headband"></div>
 
+	<a href="https://github.com/Yunchieh"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+	
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
     </header>
@@ -89,7 +97,7 @@
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
   {% if theme.canvas_nest %}
-<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-{% endif %}
+  <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  {% endif %}
 </body>
 </html>

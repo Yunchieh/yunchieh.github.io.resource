@@ -4,10 +4,10 @@
 
 # Site
 title: 麦芬奇的学习笔记
-subtitle: Study / Advancement / Living 
+subtitle: 终身学习者 / 学习奋斗中 / 与生活死缠烂打中 
 description: A coder's Blog
 keywords:
-author: Yunchieh
+author: 麦芬奇
 language: zh-Hans
 timezone:
 
@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md 

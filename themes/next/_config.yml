@@ -48,17 +48,17 @@ footer:
   #since: 2015
 
   # Icon between year and copyright info.
-  icon: user
+  icon: snowflake-o
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright:
+  copyright: 
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
     version: true
   # -------------------------------------------------------------
@@ -94,8 +94,8 @@ index_with_subtitle: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -111,10 +111,10 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -126,9 +126,11 @@ scheme: Muse
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/Yunchieh || github
+  E-Mail: mailto:yunjiewust@gmail.com || envelope
+  Zhihu: https://www.zhihu.com/people/yunchieh/
+  Weibo: https://weibo.com/yunchieh/
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -142,6 +144,10 @@ social_icons:
   enable: true
   icons_only: false
   transition: false
+  Github: github
+  Weibo: weibo
+  Zhihu: zhihu
+  E-Mail: mailchimp
 
 # Blog rolls
 links_icon: link
@@ -230,9 +236,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
-  totalcount: false
+  wordcount: true
+  min2read: true
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -686,7 +692,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -709,7 +715,7 @@ pace_theme: pace-theme-minimal
 canvas_nest: false
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false
@@ -820,6 +826,9 @@ symbols_count_time:
   item_text_total: false
   awl: 2
   wpm: 300
+  
+# Fireworks
+fireworks: true
   
 # Assets
 css: css
