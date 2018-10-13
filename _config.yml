@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Yunchieh's Blog
+title: 麦芬奇的学习笔记
 subtitle: Study / Advancement / Living 
 description: A coder's Blog
 keywords:
@@ -85,3 +85,23 @@ deploy:
   repository: git@github.com:yunchieh/yunchieh.github.io.git
   branch: master
   message: 'yunchieh-blog 站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}'
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  
+# hexo-tag-cloud
+tag_cloud:
+    textFont: Trebuchet MS, Helvetica
+    textColour: \#333
+    textHeight: 25
+    outlineColour: \#E2E1D1
+    
+# --------------------------------------------------------------
+# background settings
+# --------------------------------------------------------------
+# add canvas-nest effect
+# see detail from https://github.com/hustcc/canvas-nest.js
+canvas_nest: true

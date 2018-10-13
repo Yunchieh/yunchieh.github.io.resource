@@ -814,7 +814,13 @@ vendors:
   # https://github.com/revir/need-more-share2
   needMoreShare2:
 
-
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+  awl: 2
+  wpm: 300
+  
 # Assets
 css: css
 js: js
